@@ -1,0 +1,295 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Osamu Morozumi, Web developer</title>
+
+    <meta name="author" content="Osamu Morozumi">
+    <meta name="description" content="Portfolio page for web developer Osamu Morozumi.  Osamu is a freelance web developer and designer living in Perth Australia.  He builds web projects in WordPress, HTML5, CSS3 and javaScript">
+    <meta name="keywords" content="WordPress, web, web development, designer, web designer, HTML5, html, CSS3, css, javaScript, jQuery, front-end, front end, full stack, css grid, flex-box, React">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body> -->
+<?php include 'inc/html_head.php' ?>
+    <a id="home"></a>
+
+    <!-- Header section, full screen  -->
+
+    <header id="welcome-section">
+        <div class="headings-section">
+            <h1>
+                H<span class="luminous">i</span>, I'm Osamu,</h1>
+            <h2 class="welcome-subheading">I build web pages and applications</h2>
+        </div>
+        <a class="welcome-link" href="#projects">
+            <h3>See my work</h3>
+        </a>
+
+        <?php include 'inc/nav.php'; ?>
+       
+    </header>
+
+    <!-- Navbar -->
+
+
+    <main>
+
+        <!-- About section -->
+
+        <article id="about">
+            <a class="nav-anchor" id="about-link"></a>
+            <div class="article-header" id="about-header">
+                <h2 class="article-heading" id="about-heading">About</h2>
+            </div>
+            <div class="container" id="about-container">
+                <section class="about-section about-picture">
+                    <img class="profile-picture" src="images/profile-greyscale-reduced.jpg" alt="black and white profile picture">
+
+                </section>
+                <section class="about-section">
+
+                    <p class="about-description">
+                        I started coding in March 2018 in response to extended time off work due to injury. Web development has quickly become my passion and I love building web apps and designing web pages. I have experience using: <em class="tech">HTML5</em>,
+                        <em class="tech">WordPress</em>,
+                        <em class="tech">CSS3</em>, <em class="tech">javaScript</em>, <em class="tech">jQuery</em> and <em class="tech">git</em>. I am always improving my development skills and knowledge.
+                    </p>
+        </article>
+
+        <!-- Projects -->
+
+        <article id="projects">
+            <a class="nav-anchor" id="project-link"></a>
+            <h2 class="article-heading" id="projects-heading">Projects</h2>
+            <div class="container" id="projects-container">
+                <!--  pomodoro -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/pomodoro.png" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Pomodoro timer</h3>
+                            <p>
+                                Adjustable pomodoro timer built with react js and moment js
+                            </p>
+                            <a href='https://ozmos.github.io/pomodoro/' target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/pomodoro" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- calculator -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/calculator.png" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">React calculator</h3>
+                            <p>
+                                Working calculator built with react js.
+                            </p>
+                            <a href='https://ozmos.github.io/calculator/' target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/calculator" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- drum machine -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/drum-machine.png" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">React-redux drum-machine</h3>
+                            <p>
+                                Interactive drum-machine featuring four separate sample banks with changing color scheme.
+                            </p>
+                            <a href='https://ozmos.github.io/drum-machine/' target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/drum-machine" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- markdown-previewer -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/React-markdown-previewer.png" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">React markdown previewer</h3>
+                            <p>
+                                This markdown previewer uses marked.js and the React library to render markdown into html as the user types into the input.
+                            </p>
+                            <a href='https://ozmos.github.io/React-markdown-previewer/' target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/React-markdown-previewer" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- product landing page -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/product-landing-page-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Product landing page</h3>
+                            <p>
+                                I envisioned a global technology company planting trees around the world and what their website would look like for this free code camp project.
+                            </p>
+                            <a href="https://ozmos.github.io/product-landing-page/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/product-landing-page" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- survey form -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/survey-form-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Survey form</h3>
+                            <p>
+                                This page utilizes flex-box, grid and media queries to create responsive elements within a flexible layout. Created as a project for free code camp.
+                            </p>
+                            <a href="https://ozmos.github.io/survey-form/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/survey-form" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- technical documentation page -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/tech-doc-page-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Technical documentation page</h3>
+                            <p>
+                                The clean layout and style of this page fits the subject. Created as a project for free code camp.
+                            </p>
+                            <a href="https://ozmos.github.io/technical-documentation-page/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/technical-documentation-page" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- wikipedia viewer -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/wikiviewer-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Wikiviewer</h3>
+                            <p>
+                                This simple web app uses jQuery and JSON to enable the user to search for wikipedia articles. Created as a project for free code camp.
+                            </p>
+                            <a href="https://ozmos.github.io/wikiviewer/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/wikiviewer" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- random quote generator -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/random-quote-hard-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Random quote generator</h3>
+                            <p>
+                                This simple web app uses javascript to generate random quotes. The user has the option to tweet the quote. Created as a project for free code camp.
+                            </p>
+                            <a href="https://ozmos.github.io/random-quote-generator/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/random-quote-generator" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- clock -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/clock-app-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+
+                        <div class="project-description-text">
+                            <h3 class="project-title">Digital clock</h3>
+                            <p>
+                                This is a simple digital clock I created using javascript. You can toggle between 12 and 24hr time with a button.
+                            </p>
+                            <a href="https://ozmos.github.io/simple-clock/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/simple-clock" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+                <!-- weather viewer -->
+                <section class="project-section project-tile">
+                    <img src="images/portfolio-thumbs/weather-app-resized.jpg" alt="project thumb">
+                    <section class="project-section project-description-section">
+                        <div class="project-description-text">
+                            <h3 class="project-title">Local weather app</h3>
+                            <p>
+                                This simple app shows the user's local weather using jQuery, geolocation and an API.
+                            </p>
+                            <a href="https://ozmos.github.io/weather-app-fcc/" target="_blank">Project</a>
+                            <br>
+                            <a href="https://github.com/ozmos/weather-app-fcc" target="_blank">Code</a>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+
+            <section id="profile-links">
+
+
+                <a id="profile-link" href="https://github.com/ozmos/">
+                    <h2 id="links-heading">See more of my work</h2>
+                </a>
+
+
+            </section>
+        </article>
+        <!-- contact section -->
+        <article id="contact-form">
+            <a class="nav-anchor" id="contact-link"></a>
+            <h2 class="article-heading" id="contact-heading">Get in touch</h2>
+            <div class="contact-section">
+                <div class="message">
+                    <form name="contact" id="contact" class="ucf" novalidate>
+                        <input class="form-control" type="text" name="name" id="name" maxlength="40" placeholder="your name" required>
+                        <input class="form-control" type="email" name="email" id="email" maxlength="40" placeholder="your email@mail.com" required>
+                        <textarea class="form-control" name="message" id="message" maxlength="140" placeholder="Please visit pcwebsites.com.au to contact me directly" required></textarea>
+                        <div class="form-group" style="left: -9999px; position: absolute;">
+                            <label for="honey" class="col-sm-2 control-label">
+                            Please leave this field empty - we're using it to stop robots submitting the form<br>
+                        </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="honey" id="honey">
+                            </div>
+                        </div>
+                        <div class="progress-container"></div>
+
+                        <a href="https://pcwebsites.com.au/#contact-1" target="_blank"><input id="submit" value="Submit"></a>
+                    </form>
+                </div>
+                <!-- social media -->
+                <div class="container" id="socials-container">
+                    <h3 id="socials-heading">Catch me hanging out here</h3>
+                    <a href="https://twitter.com/PerthDev" target="_blank">
+                        <img class="socials-icon" src="images/icons/3225183 - app logo media popular social twitter.svg" alt="twitter logo">
+                    </a>
+                    <a href="https://forum.freecodecamp.org/u/ozmos/" target="_blank">
+                        <img class="socials-icon" src="images/icons/freeCodeCampSquare.jpeg" alt="free code camp">
+                    </a>
+                    <a href="https://www.linkedin.com/in/osamu-morozumi-692a27141/" target="_blank">
+                        <img class="socials-icon" src="images/icons/3225190 - app linkedin logo media popular social.svg" alt="linkedin">
+                    </a>
+                    <!-- social icons from https://www.iconfinder.com/Indygo-->
+                    <a href="https://github.com/ozmos" target="blank">
+                        <img class="socials-icon" src="images/icons/if_Github_1298743.svg" alt="github">
+                    </a>
+                    <!-- github icon from https://www.behance.net/Just_UI -->
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- footer section -->
+    
+    <?php include 'inc/footer.php' ?>
