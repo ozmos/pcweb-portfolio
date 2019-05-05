@@ -12,7 +12,7 @@
 						</a>
                     </div>
                     <div class="link-container">
-                        <a class="nav-link" href="#project-link">
+                        <a class="nav-link" href="portfolio.php">
 							Projects
 						</a>
                     </div>
