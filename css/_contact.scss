@@ -1,0 +1,80 @@
+/*contact section*/
+
+#contact-form {
+    position: relative;
+    background: linear-gradient(to top, var(--border-highlight), #008c9e);
+    padding: var(--container-padding, 20px);
+    padding-bottom: 40px;
+}
+
+#contact-heading {
+    font-size: 2.5rem;
+}
+
+.contact-section {
+    position: relative;
+    margin: 3rem auto 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 2px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #001116;
+    font-family: var(--headings, monospace);
+    color: var(--secondary-light, whitesmoke);
+}
+
+::placeholder {
+    color: white;
+}
+
+#submit {
+    background: var(--contrast);
+    /* #001116; */
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    color: var(--primary-light);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    box-shadow: var(--shadow-article);
+    cursor: pointer;
+    text-align: center;
+}
+
+#submit:hover {
+    box-shadow: var(--box-highlight);
+}
+
+.socials-icon {
+    $icon-size: 40px;
+    width: $icon-size;
+    height: $icon-size;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: $shadow-article;
+}
+
+.socials-icon:hover {
+    box-shadow: $box-highlight;
+}
+
+#socials-container a {
+    text-decoration: none;
+}

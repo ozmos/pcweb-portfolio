@@ -1,0 +1,59 @@
+:root {
+    --highlight: #00dffc;
+    --highlight-hover: hsl(187, 80%, 49%);
+    --neon-white: #fff;
+    --contrast: #008c9e;
+    --nav-background: rgba(0, 65, 73, 0.9);
+    --secondary-light: whitesmoke;
+    --primary-dark: #222;
+    --secondary-dark: #343838;
+    --container-padding: 20px;
+    --smaller-container-padding: calc(var(--container-padding) / 2);
+    --container-width: calc(100vw - var(--smaller-container-padding));
+    --tile-width: 320px;
+    --border-width: 40px;
+    --main-text: 'Raleway', sans-serif;
+    --headings: 'Montserrat', sans-serif;
+    --shadow-box: 4px 4px 6px 3px rgba(1, 1, 1, 0.9);
+    --shadow-highlight: -1px -1px 0 var(--contrast, #00dffc), 1px -1px 0 var(--contrast, #00dffc), -1px 1px 0 var(--contrast, #00dffc), 1px 1px 0 var(--contrast, #00dffc), 0 -2px 8px, 0 0 2px, 0 0 5px var(--contrast, #00dffc), 0 0 15px var(--contrast, #00dffc), 0 0 2px var(--contrast, #00dffc), 0 2px 3px var(--contrast, #00dffc);
+    --box-highlight: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 0 -2px 8px, 0 0 2px, 0 0 5px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 2px #ff7e00, 0 2px 3px #000;
+}
+
+
+/* sizes */
+
+$page-width: 1270px;
+$large-screen-width: 1270px;
+$header-height: 8rem;
+
+/* colors */
+
+$primary: #00dffc;
+$primary-1: #1a96a7;
+$primary-2: #00707f;
+$primary-3: #005662;
+$highlight: #ff7a00;
+$primary-light: #fff;
+$primary-dark: #222;
+
+/* fonts */
+
+$main-text: 'Raleway',
+sans-serif;
+$headings: 'Montserrat',
+sans-serif;
+
+/* shadows */
+
+$shadow-article: 1px 1px rgba(1, 1, 1, 0.8);
+$box-shadow: 2px 2px 10px 1px rgba(1, 1, 1, 0.2);
+$box-highlight: -1px -1px 0 rgb(255, 255, 255),
+1px -1px 0 rgb(255, 255, 255),
+-1px 1px 0 rgb(255, 255, 255),
+1px 1px 0 rgb(255, 255, 255),
+0 -2px 8px,
+0 0 2px,
+0 0 5px rgb(255, 255, 255),
+0 0 15px rgb(255, 255, 255),
+0 0 2px #ff7e00,
+0 2px 3px #000;

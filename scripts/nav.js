@@ -5,7 +5,7 @@ function classToggle() {
 }
 
 document.querySelector('#menu-toggle')
-    .addEventListener('click', classToggle);
+    .addEventListener('click', classToggle, false);
 
 window.onscroll = function() { scrollBackground() };
 

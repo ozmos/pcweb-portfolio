@@ -1,0 +1,72 @@
+/* root */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+
+/* containers */
+
+.outer {
+    position: relative;
+    max-width: $page-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    background: #fff;
+    text-align: center;
+    border-bottom: 80px solid $primary-3;
+}
+
+.row {
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* text */
+
+p,
+h3,
+a {
+    font-family: $main-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 1em;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: $primary-light;
+    text-decoration: none;
+}

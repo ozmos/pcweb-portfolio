@@ -1,24 +1,35 @@
 <?php
-
-
-
 function projects (array $projects) {
     for ($i = 0; $i < sizeof($projects); $i++) {
+        $project = $projects[$i];
 ?>
-<section class="project-section project-tile">
-  <img src="images/portfolio-thumbs/<?php echo $projects[$i]['img_url'];?>" alt="<?php echo $projects['img_alt'];?>">
-  <section class="project-section project-description-section">
-      <div class="project-description-text">
-          <h3 class="project-title"><?php echo $projects[$i]['project_title'];?></h3>
-          <p>
-              <?php echo $projects[$i]['project_descrip']; ?>
-          </p>
-          <a href="<?php echo $projects[$i]['project_url']; ?>" target="_blank">Project</a>
-          <br>
-          <a href="<?php echo $projects[$i]['code_url']; ?>" target="_blank">Code</a>
-      </div>
-  </section>
-</section>
+<article id="project-<?php echo $i + 1; ?>">
+    <div class="content-header">
+        <h2 class="content"><?php echo $project['project_title']; ?></h2>
+    </div>
+
+    <div class="outer">
+        <article class="project <?php echo $i % 2 === 0 ? 'forwards' : 'reverse'; ?>">
+            <section class="image">
+                <img src="images/projects/<?php echo $project['img_ur']?>" />
+            </section>
+            <section class="text">
+                <p>
+                <?php echo $project['project_descrip']; ?>     
+                </p>
+                <h3>
+                    <a href="<?php echo $project['project_url'];?>">Visit the project</a>
+                </h3>
+                <h3>
+                    <a href="<?php echo $project['code_url'];?>">See the code</a>
+                </h3>
+           
+
+            </section>
+            </article>
+    
+    </div>
+</article>
 <?php
     }
 }

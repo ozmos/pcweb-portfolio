@@ -1,0 +1,29 @@
+.about-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background: $primary-light;
+    h3 {
+        font-style: italic;
+    }
+    .about-section {
+        width: 350px;
+    }
+    .about-description {
+        position: relative;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .profile-picture {
+        box-shadow: $box-shadow;
+    }
+    em {
+        font-weight: bold;
+    }
+}

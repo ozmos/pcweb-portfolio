@@ -1,0 +1,111 @@
+/* header media breaks*/
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+    /* .welcome-link {
+        
+        right: 100px;
+    } */
+    /* .hero-content {
+        top: 50px;
+    } */
+}
+
+@media (min-width: 1800px) {
+    /* .headings-section {
+        left: 10%;
+    } */
+    /* h1 {
+        font-size: 7rem;
+    }
+    .headings-section h2 {
+        font-size: 3rem;
+    }
+    .welcome-link {
+        right: 12%;
+        bottom: 13.5%;
+        font-size: 3.5rem;
+    }
+    .nav-link {
+        font-size: 1.5rem;
+    } */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #welcome-section {
+        .hero-content {
+            .button {
+                font-size: 1rem;
+            }
+            .welcome-subheading {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .nav-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 57px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 2;
+        font-size: 18px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .nav-link {
+        position: relative;
+        margin-right: 10px;
+    }
+    .toggle-reveal {
+        display: flex;
+    }
+    #menu-toggle {
+        position: relative;
+        display: inline-block;
+        --size: 25px;
+        --color: var(--highlight);
+        --thickness: calc(var(--size) / 8);
+        --margin: calc((var(--size) - calc(var(--thickness) * 3)) / 2);
+        width: var(--size);
+        height: var(--size);
+    }
+    .hamburger {
+        width: 100%;
+        border: 1px solid var(--color);
+        height: var(--thickness);
+        background: var(--color);
+        border-radius: calc(var(--thickness) / 2);
+    }
+    #menu-toggle:hover .hamburger {
+        box-shadow: var(--shadow-highlight);
+    }
+    .top {
+        margin-bottom: var(--margin);
+    }
+    .welcome-link {
+        bottom: 2%;
+    }
+    #socials-container {
+        margin-top: 3em;
+    }
+}
+
+
+/* footer media breaks */
+
+@media (max-width: 400px) {
+    footer {
+        line-height: 2;
+    }
+}
