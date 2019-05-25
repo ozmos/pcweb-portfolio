@@ -15,7 +15,9 @@ $page_description = '';
     </div>
 </div>
 
-
+<div class="sub-footer">
+    <!-- additional links -->
+</div>
 </main>
 
 <?php

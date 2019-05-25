@@ -5,16 +5,16 @@
     align-items: center;
     .text {
         padding: 10px;
-        background-color: rgba(230, 230, 230, 0.3);
+        background-color: rgba(230, 230, 230, 0.7);
         box-shadow: $box-shadow;
+        a {
+            color: $primary-2;
+        }
+        a:hover {
+            color: $primary-3;
+        }
         h3 {
             font-size: 1.1rem;
-            a {
-                color: $primary-2;
-            }
-            a:hover {
-                color: $primary-3;
-            }
         }
     }
     section {
@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .project {
         position: relative;
         padding: 3rem 0;
@@ -59,7 +59,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .text {
         margin-top: 4rem;
     }

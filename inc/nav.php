@@ -12,8 +12,13 @@
                 </a>
             </div>
             <div class="link-container">
-                <a class="nav-link" href="/portfolio.php">
-                    Projects
+                <a class="nav-link" href="/javascript-projects.php">
+                    JavaScript Projects
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="nav-link" href="/web-design-projects.php">
+                    Web Design Projects
                 </a>
             </div>
             <div class="link-container">

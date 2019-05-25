@@ -33,10 +33,7 @@
     } */
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+@media (max-width: 800px) {
     #welcome-section {
         .hero-content {
             .button {
@@ -46,6 +43,9 @@
                 font-size: 1.5rem;
             }
         }
+    }
+    h1 {
+        font-size: 3rem;
     }
     .nav-container {
         width: 100%;
@@ -98,6 +98,12 @@
     }
     #socials-container {
         margin-top: 3em;
+    }
+    .content-header {
+        padding: 10px;
+        h2 {
+            font-size: 2.3rem;
+        }
     }
 }
 

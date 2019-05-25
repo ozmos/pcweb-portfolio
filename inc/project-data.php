@@ -1,5 +1,5 @@
 <?php
- $project = array(
+ $project_data = array(
   /* React front end apps */
   array(
       'project_title'=>'Pomodoro Timer',

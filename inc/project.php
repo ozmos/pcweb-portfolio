@@ -1,5 +1,5 @@
 <?php
-function projects (array $projects) {
+function project (array $projects) {
     for ($i = 0; $i < sizeof($projects); $i++) {
         $project = $projects[$i];
 ?>
@@ -11,7 +11,7 @@ function projects (array $projects) {
     <div class="outer">
         <article class="project <?php echo $i % 2 === 0 ? 'forwards' : 'reverse'; ?>">
             <section class="image">
-                <img src="images/projects/<?php echo $project['img_ur']?>" />
+                <img src="images/projects/<?php echo $project['img_url']?>" />
             </section>
             <section class="text">
                 <p>
