@@ -28,7 +28,6 @@ function checkSubject(string $data): bool {
   return checkReg($data, "/^[a-zA-Z0-9\.,\s]*$/");
 }
 function checkMessage(string $data): bool {
-  return checkReg($data, "/^[a-zA-Z0-9\?\.,! \(\)\&\/]*$/");
+  return checkReg($data, "/^[a-zA-Z0-9\?\.,'\- ]*$/");
 }
 
-/** Sanitizers **/

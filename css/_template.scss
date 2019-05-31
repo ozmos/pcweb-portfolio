@@ -27,6 +27,9 @@ h1 {
         font-size: 3rem;
         text-shadow: $shadow-article;
     }
+    a {
+        color: $primary;
+    }
 }
 
 main {

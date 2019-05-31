@@ -58,6 +58,7 @@
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/gallery.js"></script>
+    <?php echo $footerScripts; ?>
 
 
 </body>

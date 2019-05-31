@@ -20,43 +20,60 @@
         form {
             display: flex;
             flex-direction: column;
+            text-align: left;
             background: $secondary-light;
             padding: 20px;
             border-radius: 12px;
+            select {
+                max-width: 100%;
+            }
+            option {
+                -moz-white-space: pre-wrap;
+                -o-white-space: pre-wrap;
+                white-space: pre-wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            label {
+                display: block;
+                padding: 10px;
+            }
+            .elem-group {
+                padding: 10px;
+                margin: 2px;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $primary-dark;
+                color: $primary-dark;
+            }
+             ::placeholder {
+                color: $primary-dark;
+            }
+            #m66 {
+                display: none;
+            }
+            textarea {
+                width: 100%;
+            }
+            #submit {
+                background: $primary-2;
+                border: 1px solid $primary-dark;
+                color: $primary-light;
+                text-transform: uppercase;
+                width: 200px;
+                margin: 20px auto 0 auto;
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+            #submit:hover {
+                background: $primary-3;
+                box-shadow: $box-highlight;
+            }
         }
         iframe {
             display: block;
             width: 100%;
             height: 500px;
-        }
-        input,
-        textarea {
-            padding: 10px;
-            margin: 2px;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid $primary-dark;
-            font-family: var(--headings, monospace);
-            color: $primary-dark;
-        }
-         ::placeholder {
-            color: $primary-dark;
-        }
-        #m66 {
-            display: none;
-        }
-        #submit {
-            background: $primary-2;
-            border: 1px solid $primary-dark;
-            color: $primary-light;
-            text-transform: uppercase;
-            width: 200px;
-            margin: 20px auto 0 auto;
-            font-size: 1.1rem;
-        }
-        #submit:hover {
-            background: $primary-3;
-            box-shadow: $box-highlight;
         }
     }
 }
