@@ -19,10 +19,10 @@ include 'inc/html_head.php' ?>
             </div>
             
             <div class="row center hero-item">
-                <a class="button secondary" href="/contact.php">Contact</a>
+                <a class="button secondary" href="/web-design-projects.php">Web design</a>
 
-                    <a class="welcome-link button highlight" href="/portfolio.php">
-                        Projects
+                    <a class="welcome-link button highlight" href="/javascript-projects.php">
+                        Javascript
                     </a>
             </div>
         </div>
@@ -30,7 +30,7 @@ include 'inc/html_head.php' ?>
     <main>
 
         <!-- About section -->
-        <div class="content-header">
+        <div class="content-header" id="about">
             <h2>About me</h2>
         </div>
         <div class="outer">
@@ -46,7 +46,7 @@ include 'inc/html_head.php' ?>
                     Hi there, I’m Osamu. I’m a freelance web developer living in the Swan Valley,Western Australia. My passion is building things for the web.  <br />                     
                     This passion started in March 2018 after a devastating shoulder injury which left me unable to do my regular work as a landscaper. I decided to learn web development as a way to pass the time and challenge myself. <br /> 
                     I thoroughly enjoyed the challenge and creative power that comes with web development and decided to start building websites professionally on a part time basis. <br />
-                    I love coding in <em class=>PHP</em>, <em>JavaScript</em> and <em>CSS</em>. I also enjoy <em>WordPress</em> development and <em>Web Design</em>.
+                    I love coding in <em>PHP</em>, <em>JavaScript</em> and <em>CSS</em>. I also enjoy <em>WordPress</em> development and <em>Web Design</em>.
                         
                     </p>
                 </section>

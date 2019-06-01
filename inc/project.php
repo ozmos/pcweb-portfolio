@@ -11,7 +11,7 @@ function project (array $projects) {
     <div class="outer">
         <article class="project <?php echo $i % 2 === 0 ? 'forwards' : 'reverse'; ?>">
             <section class="image">
-                <img src="images/projects/<?php echo $project['img_url']?>" />
+                <img src="images/projects/<?php echo $project['img_url']?>" alt="<?php echo $project['img_alt'];?>" />
             </section>
             <section class="text">
                 <p>

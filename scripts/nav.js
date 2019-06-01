@@ -6,6 +6,12 @@ function classToggle() {
 
 document.querySelector('#menu-toggle')
     .addEventListener('click', classToggle, false);
+ 
+
+//reusable class toggle function:
+function classToggle(id, className) {
+    return document.getElementById(id).classList.toggle(className);
+}
 
 window.onscroll = function() { scrollBackground() };
 
@@ -20,3 +26,17 @@ function scrollBackground() {
         navs.forEach(nav => nav.classList.remove("blue"));
     }
 }
+
+//collapse dropdown if user clicks outside box
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let e of dropdowns) {
+        if (e.classList.contains('toggle-reveal')) {
+          e.classList.remove('toggle-reveal');
+       
+        }
+      }
+      
+    }
+  } 

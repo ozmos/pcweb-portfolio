@@ -51,7 +51,7 @@
             position: relative;
             /* opacity: 0.2; */
             /* animation: flick-on 1.5s linear 8s 1, flick-stay 3s linear 9.5s infinite
-            ; */
+    ; */
         }
         .welcome-link:visited {
             color: $primary-light;
@@ -85,14 +85,13 @@ nav {
         text-decoration: none;
     }
     a:hover {
-        color: var(--highlight-hover, hsl(187, 80%, 49%));
-        text-shadow: -1px -1px 0 $primary, 1px -1px 0 $primary, -1px 1px 0 $primary, 1px 1px 0 $primary, 0 -2px 8px, 0 0 2px, 0 0 5px $primary, 0 0 15px $primary, 0 0 2px $primary, 0 2px 3px $primary;
-        opacity: .99;
+        color: $primary-hover;
+        text-shadow: $shadow-highlight;
     }
 }
 
 .blue {
-    background: rgba(0, 86, 98, 0.8);
+    background: $nav-background;
 }
 
 .nav-container {
@@ -128,7 +127,7 @@ nav {
 
 .nav-link {
     margin-right: 30px;
-    font-family: var(--headings, monospace) !important;
+    font-family: $headings;
 }
 
 .nav-anchor {
@@ -137,7 +136,41 @@ nav {
 }
 
 
-/* nav container turns blue on scroll down */
+/* dropdown menu */
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    .dropbtn {
+        display: block;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: $nav-background;
+    padding: 0 10px 10px 0;
+    width: 230px;
+    text-align: right;
+    right: 20px;
+    box-shadow: $box-shadow;
+    z-index: 1;
+    a {
+        display: block;
+        padding-top: 10px;
+    }
+}
+
+.toggle-reveal {
+    display: flex;
+}
+
+
+/* end nav section styles */
 
 
 /* end header section styles */

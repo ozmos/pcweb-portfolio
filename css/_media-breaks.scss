@@ -1,36 +1,18 @@
-/* header media breaks*/
+/* media breaks */
 
 @media (min-width: 1200px) {
     h1 {
         font-size: 4rem;
     }
-    /* .welcome-link {
-        
-        right: 100px;
-    } */
-    /* .hero-content {
-        top: 50px;
-    } */
 }
 
-@media (min-width: 1800px) {
-    /* .headings-section {
-        left: 10%;
-    } */
-    /* h1 {
-        font-size: 7rem;
+@media (min-width: 768px) {
+    .about-section {
+        margin: 0 20px;
     }
-    .headings-section h2 {
-        font-size: 3rem;
+    .contact .contact-outer .contact-section {
+        padding: 20px;
     }
-    .welcome-link {
-        right: 12%;
-        bottom: 13.5%;
-        font-size: 3.5rem;
-    }
-    .nav-link {
-        font-size: 1.5rem;
-    } */
 }
 
 @media (max-width: 800px) {
@@ -53,15 +35,15 @@
     }
     .nav-list {
         position: absolute;
-        top: 57px;
+        top: 86px;
         right: 0;
         display: none;
         flex-direction: column;
         align-items: flex-end;
         line-height: 2;
-        font-size: 18px;
         padding-top: 20px;
         width: 100%;
+        background-color: $nav-background;
     }
     .nav-link {
         position: relative;
@@ -70,28 +52,30 @@
     .toggle-reveal {
         display: flex;
     }
+    $size: 25px;
+    $color: $primary;
+    $thickness: $size / 8;
+    $margin: ($size - $thickness * 3) / 2;
     #menu-toggle {
         position: relative;
         display: inline-block;
-        --size: 25px;
-        --color: var(--highlight);
-        --thickness: calc(var(--size) / 8);
-        --margin: calc((var(--size) - calc(var(--thickness) * 3)) / 2);
-        width: var(--size);
-        height: var(--size);
+        width: $size;
+        height: $size;
     }
     .hamburger {
         width: 100%;
-        border: 1px solid var(--color);
-        height: var(--thickness);
-        background: var(--color);
-        border-radius: calc(var(--thickness) / 2);
+        border: 1px solid $color;
+        height: $thickness;
+        background: $color;
+    }
+    .dropdown-content {
+        right: 0;
     }
     #menu-toggle:hover .hamburger {
-        box-shadow: var(--shadow-highlight);
+        box-shadow: $shadow-highlight;
     }
     .top {
-        margin-bottom: var(--margin);
+        margin-bottom: $margin;
     }
     .welcome-link {
         bottom: 2%;

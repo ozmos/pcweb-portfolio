@@ -5,15 +5,15 @@ footer {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background: var(--primary-dark, #222);
-    color: var(--primary-light, white);
-    padding: var(--container-padding, 20px);
-    font-family: var(--main-text, sans-serif);
+    background: $primary-dark;
+    color: $primary-light;
+    padding: 20px;
+    font-family: $main-text;
     font-size: 0.8rem;
 }
 
 footer a {
-    color: var(--secondary-light, whitesmoke) !important;
+    color: $secondary-light !important;
     text-decoration: none;
 }
 

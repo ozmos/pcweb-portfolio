@@ -14,13 +14,13 @@
         <div class="container">
               
               <a href="https://twitter.com/PerthDev" target="_blank">
-                  <img class="socials-icon" src="images/icons/3225183 - app logo media popular social twitter.svg" alt="twitter logo">
+                  <img class="socials-icon" src="images/icons/twitter.svg" alt="twitter logo">
               </a>
               <a href="https://forum.freecodecamp.org/u/ozmos/" target="_blank">
                   <img class="socials-icon" src="images/icons/freeCodeCampSquare.jpeg" alt="free code camp">
               </a>
               <a href="https://www.linkedin.com/in/osamu-morozumi-692a27141/" target="_blank">
-                  <img class="socials-icon" src="images/icons/3225190 - app linkedin logo media popular social.svg" alt="linkedin">
+                  <img class="socials-icon" src="images/icons/linkedin.svg" alt="linkedin">
               </a>
               <!-- social icons from https://www.iconfinder.com/Indygo -->
               <a href="https://github.com/ozmos" target="blank">
@@ -31,22 +31,22 @@
             <div class="footer-nav-links">
          
             <div class="footer-link-container">
-                <a class="footer-nav-link" href="#about">
+                <a class="footer-nav-link" href="/index.php#about">
 						About
 					</a>
             </div>
             <div class="footer-link-container">
-                <a class="footer-nav-link" href="#projects">
+                <a class="footer-nav-link" href="/javascript-projects.php">
 						Projects
 					</a>
             </div>
             <div class="footer-link-container">
-                <a class="footer-nav-link" href="#contact">
+                <a class="footer-nav-link" href="/contact.php">
 						Contact
 					</a>
             </div>
             <div class="footer-link-container">
-                <a class="footer-nav-link" href="#home">
+                <a class="footer-nav-link" href="/index.php#home">
 					Home
 					</a>
             </div>
