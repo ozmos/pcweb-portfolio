@@ -19,9 +19,9 @@ include 'inc/html_head.php' ?>
             </div>
             
             <div class="row center hero-item">
-                <a class="button secondary" href="/web-design-projects.php">Web design</a>
+                <a class="button secondary" href="web-design-projects.php">Web design</a>
 
-                    <a class="welcome-link button highlight" href="/javascript-projects.php">
+                    <a class="welcome-link button highlight" href="javascript-projects.php">
                         Javascript
                     </a>
             </div>

@@ -13,6 +13,11 @@
     .contact .contact-outer .contact-section {
         padding: 20px;
     }
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100%/12 * $i;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -88,6 +93,15 @@
         h2 {
             font-size: 2.3rem;
         }
+    }
+}
+
+
+/* big screen media breaks */
+
+@media (min-width: 1800px) {
+    h1 {
+        font-size: 4.5rem;
     }
 }
 

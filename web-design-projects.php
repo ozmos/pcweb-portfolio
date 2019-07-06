@@ -16,7 +16,7 @@ include 'inc/header.php';
 
 
 <div class="sub-footer">
-    <a href="/javascript-projects.php"><h3>See JavaScript projects</h3></a>
+    <a href="javascript-projects.php"><h3>See JavaScript projects</h3></a>
 </div>
     
 </main>

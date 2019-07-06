@@ -37,6 +37,7 @@
             opacity: 0.2;
             font-size: 1.2rem;
             animation: flick-on-button 1.5s linear 6s 1, fade-down-button 1s linear 7.5s 1, stays-button 3s linear 8.5s infinite;
+            transition: 0.3s;
         }
         .button:hover {
             box-shadow: $box-highlight;
@@ -46,15 +47,6 @@
         }
         .secondary {
             background-color: $primary-2;
-        }
-        .welcome-link {
-            position: relative;
-            /* opacity: 0.2; */
-            /* animation: flick-on 1.5s linear 8s 1, flick-stay 3s linear 9.5s infinite
-    ; */
-        }
-        .welcome-link:visited {
-            color: $primary-light;
         }
     }
 }
@@ -75,11 +67,10 @@ nav {
         width: $icon-size;
         height: $icon-size;
     }
-    a {
-        color: $primary;
-    }
+    a:link,
     a:visited {
         color: $primary;
+        transition: 0.3s;
     }
     a {
         text-decoration: none;
@@ -87,6 +78,9 @@ nav {
     a:hover {
         color: $primary-hover;
         text-shadow: $shadow-highlight;
+    }
+    a:active {
+        color: $primary-light;
     }
 }
 
@@ -104,8 +98,13 @@ nav {
     color: $primary;
     border-bottom: 2px solid $primary;
     font-weight: bold;
-    opacity: 0.2;
-    animation: flick-on 1.5s linear 6s 1, fade-down 1s linear 7.5s 1, stays 3s linear 8.5s infinite;
+}
+
+#welcome-section {
+    .nav-container {
+        opacity: 0.2;
+        animation: flick-on 1.5s linear 6s 1, fade-down 1s linear 7.5s 1, stays 3s linear 8.5s infinite;
+    }
 }
 
 #home-link {
@@ -153,7 +152,7 @@ nav {
     flex-direction: column;
     position: absolute;
     background-color: $nav-background;
-    padding: 0 10px 10px 0;
+    /* padding: 0 10px 10px 0; */
     width: 230px;
     text-align: right;
     right: 20px;
@@ -161,7 +160,8 @@ nav {
     z-index: 1;
     a {
         display: block;
-        padding-top: 10px;
+        padding: 10px;
+        border: 1px solid $primary;
     }
 }
 

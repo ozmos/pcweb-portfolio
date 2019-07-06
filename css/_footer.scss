@@ -3,7 +3,7 @@ footer {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: $primary-dark;
     color: $primary-light;
@@ -21,16 +21,23 @@ footer a:hover {
     opacity: 0.7;
 }
 
-.stacked {
+#sitemap {
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
     .socials-icon {
-        $icon-size: 30px;
+        $icon-size: 27px;
         width: $icon-size;
         height: $icon-size;
     }
     .footer-nav-links {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
+    }
+    ul {
+        text-align: left;
+        list-style-type: circle;
     }
     .footer-link-container {
         margin: 0 10px;

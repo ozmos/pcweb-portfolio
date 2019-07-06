@@ -1,29 +1,34 @@
 <nav id="navbar">
     <div id="navcon" class="nav-container outer">
         <div class="nav-header">
-            <a id="home" href="/index.php#home">
+            <a id="home-link" href="index.php#home">
             <img src="images/logo.png" alt="Perth Custom Websites Logo" width="80" height="80"/>
             </a>
         </div>
         <div class="nav-list" id="nav-list">
+        <div class="link-container">
+                <a class="nav-link" href="index.php#home">
+                    Home
+                </a>
+            </div>
             <div class="link-container">
-                <a class="nav-link" href="/index.php#about">
+                <a class="nav-link" href="index.php#about">
                     About
                 </a>
             </div>
             <div class="dropdown-container">
                 <a class="nav-link dropbtn" onclick="classToggle('dropdown', 'toggle-reveal')">Projects</a>
                     <div id="dropdown" class="dropdown-content">
-                        <a href="/javascript-projects.php">
+                        <a href="javascript-projects.php">
                             JavaScript Projects
                         </a>
-                        <a href="/web-design-projects.php">
+                        <a href="web-design-projects.php">
                             Web Design Projects
                         </a>
                     </div>
             </div>
             <div class="link-container">
-                <a class="nav-link" href="/contact.php">
+                <a class="nav-link" href="contact.php">
                     Contact
                 </a>
             </div>

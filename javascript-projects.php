@@ -16,7 +16,7 @@ include 'inc/header.php';
 
 
 <div class="sub-footer">
-    <a href="/web-design-projects.php"><h3>See web design projects</h3></a>
+    <a href="web-design-projects.php"><h3>See web design projects</h3></a>
 </div>
     
 </main>

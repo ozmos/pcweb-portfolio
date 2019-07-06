@@ -11,8 +11,10 @@
     <meta name="keywords" content="WordPress, web, web development, designer, web designer, HTML5, html, CSS3, css, javaScript, jQuery, front-end, front end, full stack, css grid, flex-box, React" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRaleway" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
