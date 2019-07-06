@@ -1,5 +1,13 @@
 <?php
 $project_data = array(
+  array(
+    'project_title'=>'Meditation Blog',
+    'project_descrip'=>'I created a lightweight backend using <em>PHP</em> for this clean and simple blogging website. <em>SCSS</em> helps to keep the stylesheet modular and easy to maintain.',
+    'img_url'=>'zen-journal.jpg',
+    'img_alt'=>'meditation blog website preview',
+    'project_url'=>'https://zenjournal.pcwebsites.com.au',
+    'code_url'=>'https://github.com/ozmos/zenjournal' 
+), 
   /* FCC projects */
   array(
     'project_title'=>'Product landing page',

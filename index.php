@@ -15,7 +15,7 @@ include 'inc/html_head.php' ?>
             <div class="headings-section row center">
                 <h1 class="hero-item">
                     Perth Custom Webs<span class="luminous">i</span>tes</h1>
-                <h2 class="welcome-subheading hero-item">Beautiful Websites for Perth Businesses</h2>
+                <h2 class="welcome-subheading hero-item">Explore my projects</h2>
             </div>
             
             <div class="row center hero-item">

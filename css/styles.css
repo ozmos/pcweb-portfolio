@@ -1,17 +1,3 @@
-/* sizes */
-
-
-/* colors */
-
-
-/* fonts */
-
-
-/* shadows */
-
-
-/* root */
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -805,6 +791,28 @@ nav a:active {
     }
     .reverse .image {
         right: 50px;
+    }
+    .slide-in {
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .left-slide {
+        -webkit-transform: translateX(-30%) scale(0.95);
+        -ms-transform: translateX(-30%) scale(0.95);
+        transform: translateX(-30%) scale(0.95);
+    }
+    .right-slide {
+        -webkit-transform: translateX(30%) scale(0.95);
+        -ms-transform: translateX(30%) scale(0.95);
+        transform: translateX(30%) scale(0.95);
+    }
+    .active {
+        opacity: 1;
+        -webkit-transform: translateX(0%) scale(1);
+        -ms-transform: translateX(0%) scale(1);
+        transform: translateX(0%) scale(1);
     }
 }
 

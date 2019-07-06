@@ -21,5 +21,6 @@ include 'inc/header.php';
     
 </main>
 <?php
+$footerScripts = '<script src="scripts/slideIn.js"></script>';
   include 'inc/footer.php';
 ?>

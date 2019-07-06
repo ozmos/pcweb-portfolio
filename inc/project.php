@@ -10,18 +10,18 @@ function project (array $projects) {
 
     <div class="outer">
         <article class="project <?php echo $i % 2 === 0 ? 'forwards' : 'reverse'; ?>">
-            <section class="image">
+            <section class="image slide-in <?php echo $i % 2 === 0 ? 'left-slide' : 'right-slide'; ?>">
                 <img src="images/projects/<?php echo $project['img_url']?>" alt="<?php echo $project['img_alt'];?>" />
             </section>
-            <section class="text">
+            <section class="text slide-in <?php echo $i % 2 !== 0 ? 'left-slide' : 'right-slide'; ?>">
                 <p>
                 <?php echo $project['project_descrip']; ?>     
                 </p>
                 <h3>
-                    <a href="<?php echo $project['project_url'];?>">Visit the project</a>
+                    <a href="<?php echo $project['project_url'];?>" target="_blank">Visit the project</a>
                 </h3>
                 <h3>
-                    <a href="<?php echo $project['code_url'];?>">See the code</a>
+                    <a href="<?php echo $project['code_url'];?>" target="_blank">See the code</a>
                 </h3>
            
 
