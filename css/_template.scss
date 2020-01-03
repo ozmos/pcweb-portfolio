@@ -1,0 +1,53 @@
+header {
+    height: 445px;
+    background: #1a1919 url("../images/backgrounds/texture.jpg");
+    display: flex;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-family: $headings;
+}
+
+h1 {
+    margin: 0;
+    color: $primary-light;
+    text-align: center;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: $header-height;
+    background: $primary-3;
+    h2 {
+        color: $primary-light;
+        font-size: 3rem;
+        text-shadow: $shadow-article;
+    }
+    a {
+        color: $primary;
+    }
+}
+
+main {
+    .outer {
+        padding: 4rem 0;
+    }
+}
+
+.sub-footer {
+    height: 80px;
+    background-color: $primary-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: $primary-light;
+    }
+    a:hover {
+        text-shadow: $box-highlight;
+    }
+}

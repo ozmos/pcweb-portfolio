@@ -1,0 +1,176 @@
+/* Main header section or 'hero section' */
+
+#welcome-section {
+    height: 100vh;
+    background: #1a1919 url("../images/backgrounds/texture.jpg");
+    .hero-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        h1 {
+            color: rgba(255, 255, 255, 0.2);
+            animation: fade-on 1.5s linear 4s 1, fades-down 1s linear 5.5s 1, stay 1s linear 6.5s infinite;
+            text-shadow: none;
+        }
+        .hero-item {
+            padding: 1rem 20px;
+        }
+        .welcome-subheading {
+            position: relative;
+            color: rgba(255, 255, 255, 0.2);
+            animation: fade-on 1.5s linear 5s 1, fades-down 1s linear 6.5s 1, stay 1s linear 7.5s infinite;
+            text-shadow: none;
+            font-size: 2rem;
+            font-family: $main-text;
+            font-style: italic;
+        }
+        /* letter i flickering effect */
+        .luminous {
+            color: $primary-light;
+            animation: flicker 5s linear 2s 1, fades-down 1s linear 5.5s 1, stay 1s linear 6.5s infinite;
+            opacity: .4;
+        }
+        /* buttons */
+        .button {
+            opacity: 0.2;
+            font-size: 1.2rem;
+            animation: flick-on-button 1.5s linear 6s 1, fade-down-button 1s linear 7.5s 1, stays-button 3s linear 8.5s infinite;
+            transition: 0.3s;
+        }
+        .button:hover {
+            box-shadow: $box-highlight;
+        }
+        .highlight {
+            background-color: $highlight;
+        }
+        .secondary {
+            background-color: $primary-2;
+        }
+    }
+}
+
+
+/* nav styles */
+
+nav {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    text-align: center;
+    color: $primary;
+    z-index: 5;
+    .socials-icon {
+        $icon-size: 30px;
+        width: $icon-size;
+        height: $icon-size;
+    }
+    a:link,
+    a:visited {
+        color: $primary;
+        transition: 0.3s;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: $primary-hover;
+        text-shadow: $shadow-highlight;
+    }
+    a:active {
+        color: $primary-light;
+    }
+}
+
+.blue {
+    background: $nav-background;
+}
+
+.nav-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: $primary;
+    border-bottom: 2px solid $primary;
+    font-weight: bold;
+}
+
+#welcome-section {
+    .nav-container {
+        opacity: 0.2;
+        animation: flick-on 1.5s linear 6s 1, fade-down 1s linear 7.5s 1, stays 3s linear 8.5s infinite;
+    }
+}
+
+#home-link {
+    color: $primary;
+    justify-self: flex-start;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*  color: $primary; */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.nav-link {
+    margin-right: 30px;
+    font-family: $headings;
+}
+
+.nav-anchor {
+    position: relative;
+    top: -40px;
+}
+
+
+/* dropdown menu */
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    .dropbtn {
+        display: block;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: $nav-background;
+    /* padding: 0 10px 10px 0; */
+    width: 230px;
+    text-align: right;
+    right: 20px;
+    box-shadow: $box-shadow;
+    z-index: 1;
+    a {
+        display: block;
+        padding: 10px;
+        border: 1px solid $primary;
+    }
+}
+
+.toggle-reveal {
+    display: flex;
+}
+
+
+/* end nav section styles */
+
+
+/* end header section styles */

@@ -1,0 +1,159 @@
+/* letter i keyframes */
+
+@keyframes flicker {
+    0%,
+    0.999%,
+    2%,
+    2.999%,
+    4%,
+    5.999%,
+    50%,
+    100% {
+        opacity: .99;
+        text-shadow: -1px -1px 0 $primary-light, 1px -1px 0 $primary-light, -1px 1px 0 $primary-light, 1px 1px 0 $primary-light, 0 -2px 8px, 0 0 2px, 0 0 5px $primary-light, 0 0 15px $primary-light, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    1%,
+    1.999%,
+    3%,
+    3.999%,
+    6% {
+        opacity: .4;
+        text-shadow: none;
+    }
+}
+
+
+/* Heading and subheading keyframes */
+
+@keyframes fade-on {
+    0%,
+    19.999%,
+    22%,
+    100% {
+        color: rgba(255, 255, 255, 1);
+        text-shadow: -1px -1px 0 $primary-light, 1px -1px 0 $primary-light, -1px 1px 0 $primary-light, 1px 1px 0 $primary-light, 0 -2px 8px, 0 0 2px, 0 0 5px $primary-light, 0 0 15px $primary-light, 0 0 2px #ff7e00, 0 2px 3px #000;
+    }
+    20%,
+    21.999% {
+        color: rgba(255, 255, 255, 0.4);
+        text-shadow: none;
+    }
+}
+
+@keyframes fades-down {
+    0% {
+        color: rgba(255, 255, 255, 0.99);
+        text-shadow: $box-highlight;
+    }
+    100% {
+        text-shadow: none;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes stay {
+    0%,
+    100% {
+        color: $primary-light;
+        opacity: .99;
+        text-shadow: $shadow-article;
+    }
+}
+
+
+/* button keyframes */
+
+@keyframes flick-on-button {
+    0%,
+    19.999%,
+    60%,
+    100% {
+        opacity: .99;
+        color: $primary-light;
+        box-shadow: $box-highlight;
+    }
+    20% {
+        opacity: .4;
+        box-shadow: none;
+    }
+}
+
+@keyframes fade-down-button {
+    0% {
+        opacity: .99;
+        color: $primary-light;
+        box-shadow: $box-highlight;
+    }
+    100% {
+        box-shadow: $box-shadow;
+        opacity: 1;
+    }
+}
+
+@keyframes stays-button {
+    0%,
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* navbar and neon sign keyframes */
+
+@keyframes flick-on {
+    0%,
+    19.999%,
+    60%,
+    100% {
+        text-shadow: $shadow-highlight;
+        /* ; */
+        opacity: .99;
+        color: $primary-hover;
+    }
+    20% {
+        opacity: .4;
+        text-shadow: none;
+    }
+}
+
+@keyframes flick-stay {
+    0%,
+    95.999%,
+    97%,
+    100% {
+        text-shadow: $shadow-highlight;
+        opacity: .99;
+        color: $primary-hover;
+    }
+    96%,
+    96.999% {
+        opacity: .4;
+        text-shadow: none;
+        color: $primary-hover;
+    }
+    44.9% {
+        opacity: 0.89;
+        text-shadow: $shadow-highlight;
+        color: $primary-hover;
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        text-shadow: $shadow-highlight;
+        opacity: .99;
+        color: $primary-hover;
+    }
+    100% {
+        text-shadow: none;
+        opacity: 1;
+    }
+}
+
+@keyframes stays {
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow: none;
+    }
+}

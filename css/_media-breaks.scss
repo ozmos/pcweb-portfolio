@@ -1,0 +1,115 @@
+/* media breaks */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        margin: 0 20px;
+    }
+    .contact .contact-outer .contact-section {
+        padding: 20px;
+    }
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100%/12 * $i;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #welcome-section {
+        .hero-content {
+            .button {
+                font-size: 1rem;
+            }
+            .welcome-subheading {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 86px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 2;
+        padding-top: 20px;
+        width: 100%;
+        background-color: $nav-background;
+    }
+    .nav-link {
+        position: relative;
+        margin-right: 10px;
+    }
+    .toggle-reveal {
+        display: flex;
+    }
+    $size: 25px;
+    $color: $primary;
+    $thickness: $size / 8;
+    $margin: ($size - $thickness * 3) / 2;
+    #menu-toggle {
+        position: relative;
+        display: inline-block;
+        width: $size;
+        height: $size;
+    }
+    .hamburger {
+        width: 100%;
+        border: 1px solid $color;
+        height: $thickness;
+        background: $color;
+    }
+    .dropdown-content {
+        right: 0;
+    }
+    #menu-toggle:hover .hamburger {
+        box-shadow: $shadow-highlight;
+    }
+    .top {
+        margin-bottom: $margin;
+    }
+    .welcome-link {
+        bottom: 2%;
+    }
+    #socials-container {
+        margin-top: 3em;
+    }
+    .content-header {
+        padding: 10px;
+        h2 {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+
+/* big screen media breaks */
+
+@media (min-width: 1800px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+
+/* footer media breaks */
+
+@media (max-width: 400px) {
+    footer {
+        line-height: 2;
+    }
+}
